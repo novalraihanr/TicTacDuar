@@ -4,6 +4,7 @@ PAPB Projek Akhir
 Referensi Desain ada di [Figma](https://www.figma.com/file/BngUlG3CqpxcpFbMbrGUnu/Tic-tac-duar?type=design&node-id=0-1&mode=design&t=ODtLRnmWahPp28tx-0)
 
 ## To Do Lists
+Frontend : Muhammad Bintang Saktya Ramadhan
 ### Layout
 - ✅ Main Menu
 - ✅ Name Window
@@ -11,6 +12,7 @@ Referensi Desain ada di [Figma](https://www.figma.com/file/BngUlG3CqpxcpFbMbrGUn
 - ✅ Win Window
 - ✅ History Window
 
+Backend : Noval Raihan Ramadhan
 ### Activity
 - 🟪 Gameplay
 - ✅ Fungsi Pindah Halaman
