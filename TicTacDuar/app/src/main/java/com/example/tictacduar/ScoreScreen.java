@@ -25,8 +25,6 @@ public class ScoreScreen extends AppCompatActivity {
     TextView win;
     AppCompatButton back;
 
-    ScoreDatabase scoreDB;
-
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,33 +38,6 @@ public class ScoreScreen extends AppCompatActivity {
         time = info.getString("time");
 
         String winnertxt = winner + " is the winner";
-
-
-
-//        RoomDatabase.Callback Call = new RoomDatabase.Callback() {
-//            @Override
-//            public void onCreate(@NonNull SupportSQLiteDatabase db) {
-//                super.onCreate(db);
-//            }
-//
-//            @Override
-//            public void onOpen(@NonNull SupportSQLiteDatabase db) {
-//                super.onOpen(db);
-//            }
-//        };
-
-        scoreDB = Room.databaseBuilder(getApplicationContext(), ScoreDatabase.class, "ScoreDB").build();
-
-        Score s1 = new Score(player1, player2, time, winnertxt);
-
-        ExecutorService exe = Executors.newSingleThreadExecutor();
-
-        exe.execute(new Runnable() {
-            @Override
-            public void run() {
-                scoreDB.getScoreDAO().addScore(s1);
-            }
-        });
 
         win = findViewById(R.id.status);
         win.setText(winner + " Win");

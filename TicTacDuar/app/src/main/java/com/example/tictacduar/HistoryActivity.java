@@ -25,53 +25,10 @@ public class HistoryActivity extends AppCompatActivity {
 
     AppCompatButton back;
 
-    List<Score> scoreList;
-
-    ScoreDatabase scoreDB;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_history);
-
-        scoreDB = Room.databaseBuilder(getApplicationContext(), ScoreDatabase.class, "ScoreDB").build();
-
-        ExecutorService exe = Executors.newSingleThreadExecutor();
-
-        exe.execute(new Runnable() {
-            @Override
-            public void run() {
-                scoreList = scoreDB.getScoreDAO().getAllScore();
-            }
-        });
-
-        StringBuilder strings = new StringBuilder();
-        for(Score s : scoreList){
-            strings.append(s.getPlayer1()).append(";").append(s.getPlayer2()).append(";").append(s.getTime()).append(";").append(s.getWinner()).append("_");
-        }
-
-        strings.toString();
-
-        String complete = new String(strings);
-        String[] baris = complete.split("_");
-        TableLayout tbLayout = (TableLayout) findViewById(R.id.tbLayout);
-        tbLayout.removeAllViews();
-
-        for (int i = 0; i < baris.length; i++) {
-            String bariss = baris[i];
-            TableRow tbRow = new TableRow(HistoryActivity.this);
-            tbRow.setLayoutParams(new TableRow.LayoutParams(TableRow.LayoutParams.MATCH_PARENT, TableRow.LayoutParams.WRAP_CONTENT));
-            final String[] kolom = bariss.split(";");
-
-            for (int j = 0; j < kolom.length; j++) {
-                final String kolomm = kolom[j];
-                TextView kmView = new TextView(HistoryActivity.this);
-                kmView.setLayoutParams(new TableRow.LayoutParams(TableRow.LayoutParams.WRAP_CONTENT, TableRow.LayoutParams.WRAP_CONTENT));
-                kmView.setTextColor(getResources().getColor(android.R.color.black));
-                kmView.setText(String.format("%7s", kolomm));
-                tbRow.addView(kmView);
-            }
-            tbLayout.addView(tbRow);
-        }
 
         back = findViewById(R.id.backButton);
         back.setOnClickListener(new View.OnClickListener() {
@@ -81,7 +38,5 @@ public class HistoryActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
-
     }
 }
