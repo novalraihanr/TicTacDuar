@@ -1,5 +1,5 @@
 # TicTacDuar-Android
-Aplikasi permainan tic tac toe android dengan sedikit sentuhan ledakan
+PAPB Projek Akhir
 
 Referensi Desain ada di [Figma](https://www.figma.com/file/BngUlG3CqpxcpFbMbrGUnu/Tic-tac-duar?type=design&node-id=0-1&mode=design&t=ODtLRnmWahPp28tx-0)
 
@@ -7,14 +7,14 @@ Referensi Desain ada di [Figma](https://www.figma.com/file/BngUlG3CqpxcpFbMbrGUn
 ### Layout
 - ✅ Main Menu
 - ✅ Name Window
-- ✅ Game Window
+- 🟪 Game Window
 - ✅ Win Window
-- 🟥 History Window
+- ✅ History Window
 
 ### Activity
-- ✅ Gameplay
+- 🟪 Gameplay
 - ✅ Fungsi Pindah Halaman
-- ✅ Menyimpan data permainan ke database
+- 🟥 Menyimpan data permainan ke database
 
 **Deadline : 2 minggu lagi**
 
