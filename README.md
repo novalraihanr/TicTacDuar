@@ -16,8 +16,4 @@ Referensi Desain ada di [Figma](https://www.figma.com/file/BngUlG3CqpxcpFbMbrGUn
 - ✅ Fungsi Pindah Halaman
 - 🟥 Menyimpan data permainan ke database
 
-**Deadline : 2 minggu lagi**
-
-
-
 Created by Muhammad Bintang Saktya Ramadhan & Noval Raihan Ramadhan
