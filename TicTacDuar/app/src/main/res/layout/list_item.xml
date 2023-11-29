@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/inputtextwhite"
+    android:layout_marginHorizontal="20dp"
+    android:layout_marginTop="20dp"
+    android:stretchColumns="1,2,3,4"
+    >
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/column_time"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:textColor="@color/black"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_column="1"/>
+
+        <TextView
+            android:id="@+id/column_player1"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:textColor="@color/black"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_column="1"/>
+
+        <TextView
+            android:id="@+id/column_player2"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:textColor="@color/black"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_column="1"/>
+
+        <TextView
+            android:id="@+id/column_status"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:textColor="@color/black"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_column="1"/>
+
+    </TableRow>
+
+
+</TableLayout>
