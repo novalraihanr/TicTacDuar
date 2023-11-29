@@ -86,7 +86,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:onClick="playerTap"
+                android:onClick="Tapped"
                 android:padding="20sp"
                 android:tag="0" />
 
@@ -95,7 +95,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:onClick="playerTap"
+                android:onClick="Tapped"
                 android:padding="20sp"
                 android:tag="1" />
 
@@ -104,7 +104,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:onClick="playerTap"
+                android:onClick="Tapped"
                 android:padding="20sp"
                 android:tag="2" />
         </LinearLayout>
@@ -120,7 +120,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:onClick="playerTap"
+                android:onClick="Tapped"
                 android:padding="20sp"
                 android:tag="3" />
 
@@ -129,7 +129,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:onClick="playerTap"
+                android:onClick="Tapped"
                 android:padding="20sp"
                 android:tag="4" />
 
@@ -138,7 +138,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:onClick="playerTap"
+                android:onClick="Tapped"
                 android:padding="20sp"
                 android:tag="5" />
         </LinearLayout>
@@ -154,7 +154,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:onClick="playerTap"
+                android:onClick="Tapped"
                 android:padding="20sp"
                 android:tag="6" />
 
@@ -163,7 +163,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:onClick="playerTap"
+                android:onClick="Tapped"
                 android:padding="20sp"
                 android:tag="7" />
 
@@ -172,7 +172,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:onClick="playerTap"
+                android:onClick="Tapped"
                 android:padding="20sp"
                 android:tag="8" />
 
