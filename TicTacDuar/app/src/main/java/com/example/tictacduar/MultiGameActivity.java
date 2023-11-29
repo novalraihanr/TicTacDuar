@@ -85,8 +85,6 @@ public class MultiGameActivity extends AppCompatActivity {
 
             counter++;
             checkWin();
-        } else {
-            Toast.makeText(this, "Already occupied", Toast.LENGTH_SHORT).show();
         }
     }
 
